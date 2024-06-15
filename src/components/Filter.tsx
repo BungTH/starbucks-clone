@@ -13,9 +13,12 @@ import {
   RoastLevels,
 } from "../interfaces/Product";
 
-const Filter = () => {
+interface FilterProps {
+  setFilteredProducts: (products: Product[]) => void;
+}
+
+const Filter = ({ setFilteredProducts }: FilterProps) => {
   const [products, setProducts] = useState<Product[]>([]);
-  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<Categories[]>([]);
   const [selectedRoastLevel, setSelectedRoastLevel] = useState<RoastLevels[]>(
     []
@@ -38,7 +41,7 @@ const Filter = () => {
     };
 
     fetchData();
-  }, []);
+  }, [setFilteredProducts]);
 
   useEffect(() => {
     const applyFilters = () => {
@@ -57,7 +60,13 @@ const Filter = () => {
     };
 
     applyFilters();
-  }, [selectedCategory, selectedRoastLevel, selectedCaffeine, products]);
+  }, [
+    selectedCategory,
+    selectedRoastLevel,
+    selectedCaffeine,
+    products,
+    setFilteredProducts,
+  ]);
 
   const handleCategoryChange = (category: Categories) => {
     setSelectedCategory((prevCategory) =>
@@ -141,13 +150,6 @@ const Filter = () => {
             />
           ))}
         </FormControl>
-      </Grid>
-      <Grid item xs={12}>
-        <ul>
-          {filteredProducts.map((item) => (
-            <li key={item.id}>{item.name}</li>
-          ))}
-        </ul>
       </Grid>
     </Grid>
   );

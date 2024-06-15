@@ -5,7 +5,7 @@ const Navigation = () => {
   const theme = useTheme();
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#303030" }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "#303030" }}>
       <Grid>
         <Toolbar
           disableGutters
