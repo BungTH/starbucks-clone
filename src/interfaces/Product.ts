@@ -15,7 +15,7 @@ export interface Product {
   caffeine: Caffeine;
 }
 
-enum Categories {
+export enum Categories {
   WholeBean = "Whole Bean",
   StarbucksReserve = "Starbucks Reserve",
   StarbucksVIA = "Starbucks VIA",
@@ -24,13 +24,13 @@ enum Categories {
   Syrub = "Syrub",
 }
 
-enum RoastLevels {
+export enum RoastLevels {
   Blonde = "Blonde",
   Medium = "Medium",
   Dark = "Dark",
 }
 
-enum Caffeine {
+export enum Caffeine {
   Decaf = "Decaf",
   Regular = "Regular",
 }
