@@ -1,20 +1,19 @@
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import { Typography } from "@mui/material";
+import { AppBar, Toolbar, Box, Avatar, Typography, Grid } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 const Navigation = () => {
+  const theme = useTheme();
+
   return (
     <AppBar position="static" sx={{ backgroundColor: "#303030" }}>
-      <Container>
+      <Grid>
         <Toolbar
           disableGutters
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            mx: "auto",
+            marginLeft: [theme.spacing(2), theme.spacing(3), theme.spacing(4)],
+            marginRight: [theme.spacing(2), theme.spacing(3), theme.spacing(4)],
           }}
         >
           <Box sx={{ flexGrow: 0 }}>
@@ -30,7 +29,7 @@ const Navigation = () => {
             <Avatar alt="User Icon" src="./src/assets/user-icon.svg" />
           </Box>
         </Toolbar>
-      </Container>
+      </Grid>
     </AppBar>
   );
 };

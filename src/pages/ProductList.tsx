@@ -1,7 +1,9 @@
+import HeroBanner from "../components/HeroBanner";
+
 const ProductList = () => {
   return (
     <>
-      <h1>Product List Works</h1>
+      <HeroBanner />
     </>
   );
 };
