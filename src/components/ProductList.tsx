@@ -1,11 +1,5 @@
-import ProductCard from "./ProductCard";
-
 const ProductList = () => {
-  return (
-    <>
-      <ProductCard />
-    </>
-  );
+  return <></>;
 };
 
 export default ProductList;
