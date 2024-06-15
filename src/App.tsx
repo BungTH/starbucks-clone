@@ -1,14 +1,15 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
-import ProductDetail from "./pages/ProductDetail";
-import ProductList from "./pages/ProductList";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <Navigation />
-      <ProductList />
-      <ProductDetail />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 };
 

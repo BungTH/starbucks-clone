@@ -1,9 +1,9 @@
-import HeroBanner from "../components/HeroBanner";
+import ProductCard from "./ProductCard";
 
 const ProductList = () => {
   return (
     <>
-      <HeroBanner />
+      <ProductCard />
     </>
   );
 };
