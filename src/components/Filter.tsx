@@ -21,7 +21,7 @@ const Filter = ({ setFilteredProducts }: FilterProps) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<Categories[]>([]);
   const [selectedRoastLevel, setSelectedRoastLevel] = useState<RoastLevels[]>(
-    []
+    [],
   );
   const [selectedCaffeine, setSelectedCaffeine] = useState<Caffeine[]>([]);
 
@@ -72,7 +72,7 @@ const Filter = ({ setFilteredProducts }: FilterProps) => {
     setSelectedCategory((prevCategory) =>
       prevCategory.includes(category)
         ? prevCategory.filter((c) => c !== category)
-        : [...prevCategory, category]
+        : [...prevCategory, category],
     );
   };
 
@@ -80,7 +80,7 @@ const Filter = ({ setFilteredProducts }: FilterProps) => {
     setSelectedRoastLevel((prevRoastLevels) =>
       prevRoastLevels.includes(roastLevels)
         ? prevRoastLevels.filter((c) => c !== roastLevels)
-        : [...prevRoastLevels, roastLevels]
+        : [...prevRoastLevels, roastLevels],
     );
   };
 
@@ -88,12 +88,13 @@ const Filter = ({ setFilteredProducts }: FilterProps) => {
     setSelectedCaffeine((prevCaffeine) =>
       prevCaffeine.includes(caffeine)
         ? prevCaffeine.filter((c) => c !== caffeine)
-        : [...prevCaffeine, caffeine]
+        : [...prevCaffeine, caffeine],
     );
   };
 
   return (
     <Grid>
+      <Typography variant="h5">Filters</Typography>
       <Grid item xs={12} md={3}>
         <Typography variant="h6">Categories</Typography>
         <FormControl>

@@ -11,7 +11,10 @@
       "complementary_flavors": ["Hazelnut", "Caramel"],
       "region": "Colombia",
       "price": 250,
-      "image_url": [""],
+      "image_url": [
+        "https://iili.io/H8Y78Qt.webp",
+        "https://iili.io/H8Y7kTN.webp"
+      ],
       "category": "Starbucks Origami",
       "roast_level": "Medium",
       "caffeine": "Regular"
@@ -27,7 +30,7 @@
       "complementary_flavors": ["Blueberry", "Jasmine"],
       "region": "Ethiopia",
       "price": 280,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7kTN.webp"],
       "category": "Whole Bean",
       "roast_level": "Blonde",
       "caffeine": "Decaf"
@@ -43,7 +46,11 @@
       "complementary_flavors": ["Tobacco", "Cedar"],
       "region": "Sumatra",
       "price": 300,
-      "image_url": [""],
+      "image_url": [
+        "https://iili.io/H8Y7X4a.webp",
+        "https://iili.io/H8Y7X4a.webp",
+        "https://iili.io/H8Y7X4a.webp"
+      ],
       "category": "Whole Bean",
       "roast_level": "Dark",
       "caffeine": "Regular"
@@ -59,7 +66,7 @@
       "complementary_flavors": ["Blackcurrant", "Citrus"],
       "region": "Kenya",
       "price": 320,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7r4s.webp"],
       "category": "Whole Bean",
       "roast_level": "Medium",
       "caffeine": "Decaf"
@@ -75,7 +82,7 @@
       "complementary_flavors": ["Orange", "Caramel"],
       "region": "Guatemala",
       "price": 290,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7gGn.webp"],
       "category": "Starbucks Reserve",
       "roast_level": "Medium",
       "caffeine": "Regular"
@@ -91,7 +98,7 @@
       "complementary_flavors": ["Macadamia", "Chocolate"],
       "region": "Hawaii",
       "price": 350,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7lpV.webp"],
       "category": "Teavana",
       "roast_level": "Medium",
       "caffeine": "Decaf"
@@ -107,7 +114,7 @@
       "complementary_flavors": ["Peanut", "Chocolate"],
       "region": "Brazil",
       "price": 260,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7wYv.webp"],
       "category": "Whole Bean",
       "roast_level": "Medium",
       "caffeine": "Regular"
@@ -123,7 +130,10 @@
       "complementary_flavors": ["Lemon", "Jasmine"],
       "region": "Costa Rica",
       "price": 270,
-      "image_url": [""],
+      "image_url": [
+        "https://iili.io/H8Y7VCF.webp",
+        "https://iili.io/H8Y7VCF.webp"
+      ],
       "category": "Starbucks Origami",
       "roast_level": "Blonde",
       "caffeine": "Regular"
@@ -139,7 +149,7 @@
       "complementary_flavors": ["Blackberry", "Wine"],
       "region": "Tanzania",
       "price": 310,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7vjI.webp"],
       "category": "Starbucks VIA",
       "roast_level": "Medium",
       "caffeine": "Decaf"
@@ -155,7 +165,7 @@
       "complementary_flavors": ["Vanilla", "Honey"],
       "region": "Jamaica",
       "price": 380,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7GQ1.webp"],
       "category": "Whole Bean",
       "roast_level": "Medium",
       "caffeine": "Regular"
@@ -171,7 +181,7 @@
       "complementary_flavors": ["Caramel", "Rose"],
       "region": "Rwanda",
       "price": 300,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7ckQ.webp"],
       "category": "Starbucks Reserve",
       "roast_level": "Medium",
       "caffeine": "Regular"
@@ -187,7 +197,7 @@
       "complementary_flavors": ["Orange", "Lime"],
       "region": "Panama",
       "price": 290,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7Opp.webp"],
       "category": "Whole Bean",
       "roast_level": "Blonde",
       "caffeine": "Decaf"
@@ -203,7 +213,7 @@
       "complementary_flavors": ["Cedar", "Maple Syrup"],
       "region": "Indonesia",
       "price": 270,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7j3J.webp"],
       "category": "Teavana",
       "roast_level": "Dark",
       "caffeine": "Regular"
@@ -219,7 +229,10 @@
       "complementary_flavors": ["Peanut", "Dark Chocolate"],
       "region": "Vietnam",
       "price": 240,
-      "image_url": [""],
+      "image_url": [
+        "https://iili.io/H8Y7UCX.webp",
+        "https://iili.io/H8Y7UCX.webp"
+      ],
       "category": "Starbucks VIA",
       "roast_level": "Dark",
       "caffeine": "Regular"
@@ -235,7 +248,7 @@
       "complementary_flavors": ["Nutty", "Chocolate"],
       "region": "Honduras",
       "price": 260,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y71TB.webp"],
       "category": "Whole Bean",
       "roast_level": "Medium",
       "caffeine": "Regular"
@@ -251,7 +264,7 @@
       "complementary_flavors": ["Bergamot", "Lemon"],
       "region": "Ethiopia",
       "price": 280,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7aYx.webp"],
       "category": "Whole Bean",
       "roast_level": "Blonde",
       "caffeine": "Decaf"
@@ -267,7 +280,7 @@
       "complementary_flavors": ["Cinnamon", "Nutmeg"],
       "region": "Mexico",
       "price": 270,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7EhP.webp"],
       "category": "Whole Bean",
       "roast_level": "Medium",
       "caffeine": "Regular"
@@ -283,7 +296,7 @@
       "complementary_flavors": ["Berry", "Apple"],
       "region": "Peru",
       "price": 290,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7gGn.webp"],
       "category": "Starbucks Reserve",
       "roast_level": "Blonde",
       "caffeine": "Regular"
@@ -299,7 +312,7 @@
       "complementary_flavors": ["Toffee", "Cocoa"],
       "region": "Colombia",
       "price": 310,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7lpV.webp"],
       "category": "Starbucks VIA",
       "roast_level": "Dark",
       "caffeine": "Decaf"
@@ -315,7 +328,7 @@
       "complementary_flavors": ["Jasmine", "Berries"],
       "region": "Panama",
       "price": 320,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7wYv.webp"],
       "category": "Teavana",
       "roast_level": "Blonde",
       "caffeine": "Regular"
@@ -331,7 +344,7 @@
       "complementary_flavors": ["Honey", "Citrus"],
       "region": "Costa Rica",
       "price": 280,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7VCF.webp"],
       "category": "Whole Bean",
       "roast_level": "Blonde",
       "caffeine": "Decaf"
@@ -347,7 +360,7 @@
       "complementary_flavors": ["Berry", "Black Pepper"],
       "region": "Ethiopia",
       "price": 300,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7NvR.webp"],
       "category": "Starbucks Origami",
       "roast_level": "Medium",
       "caffeine": "Decaf"
@@ -363,7 +376,7 @@
       "complementary_flavors": ["Cream", "Nuts"],
       "region": "Nicaragua",
       "price": 290,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7NvR.webp"],
       "category": "Starbucks VIA",
       "roast_level": "Medium",
       "caffeine": "Regular"
@@ -379,7 +392,11 @@
       "complementary_flavors": ["Caramel", "Nuts"],
       "region": "Colombia",
       "price": 310,
-      "image_url": [""],
+      "image_url": [
+        "https://iili.io/H8Y5Sgj.webp",
+        "https://iili.io/H8Y5Sgj.webp",
+        "https://iili.io/H8Y5Sgj.webp"
+      ],
       "category": "Starbucks Reserve",
       "roast_level": "Medium",
       "caffeine": "Decaf"
@@ -395,7 +412,7 @@
       "complementary_flavors": ["Chocolate", "Hazelnut"],
       "region": "Brazil",
       "price": 320,
-      "image_url": [""],
+      "image_url": ["https://iili.io/H8Y7Opp.webp"],
       "category": "Syrub",
       "roast_level": "Dark",
       "caffeine": "Regular"
