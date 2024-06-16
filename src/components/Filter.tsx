@@ -14,34 +14,16 @@ import {
 } from "../interfaces/Product";
 
 interface FilterProps {
+  products: Product[];
   setFilteredProducts: (products: Product[]) => void;
 }
 
-const Filter = ({ setFilteredProducts }: FilterProps) => {
-  const [products, setProducts] = useState<Product[]>([]);
+const Filter = ({ products, setFilteredProducts }: FilterProps) => {
   const [selectedCategory, setSelectedCategory] = useState<Categories[]>([]);
   const [selectedRoastLevel, setSelectedRoastLevel] = useState<RoastLevels[]>(
     [],
   );
   const [selectedCaffeine, setSelectedCaffeine] = useState<Caffeine[]>([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("http://localhost:3000/products"); // If can't retrieve data, run "json-server --watch db.json" in terminal
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data: Product[] = await response.json();
-        setProducts(data);
-        setFilteredProducts(data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, [setFilteredProducts]);
 
   useEffect(() => {
     const applyFilters = () => {
