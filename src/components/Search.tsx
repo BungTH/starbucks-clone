@@ -1,5 +1,6 @@
-import React, { Dispatch, SetStateAction } from "react";
-import { TextField } from "@mui/material";
+import { Dispatch, SetStateAction } from "react";
+import { TextField, Grid, Box } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 
 interface SearchProps {
   searchTerm: string;
@@ -7,17 +8,19 @@ interface SearchProps {
 }
 
 const Search = ({ searchTerm, setSearchTerm }: SearchProps) => {
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value);
-  };
-
   return (
-    <TextField
-      type="text"
-      placeholder="Search..."
-      value={searchTerm}
-      onChange={handleChange}
-    />
+    <Grid>
+      <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+        <SearchIcon sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+        <TextField
+          id="input-with-sx"
+          label="Starbucks Product"
+          variant="standard"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </Box>
+    </Grid>
   );
 };
 

@@ -9,7 +9,7 @@ import Search from "../components/Search";
 const Home = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,8 +31,8 @@ const Home = () => {
 
   useEffect(() => {
     const lowerCaseSearchTerm = searchTerm.toLowerCase();
-    const searchedAndFilteredProducts = products.filter(product =>
-      product.name.toLowerCase().includes(lowerCaseSearchTerm)
+    const searchedAndFilteredProducts = products.filter((product) =>
+      product.name.toLowerCase().includes(lowerCaseSearchTerm),
     );
     setFilteredProducts(searchedAndFilteredProducts);
   }, [products, searchTerm]);
@@ -42,7 +42,10 @@ const Home = () => {
       <HeroBanner />
       <Grid container spacing={2} justifyContent="center">
         <Grid item xs={6} sm={3}>
-          <Filter products={products} setFilteredProducts={setFilteredProducts} />
+          <Filter
+            products={products}
+            setFilteredProducts={setFilteredProducts}
+          />
         </Grid>
         <Grid item xs={12} sm={6}>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
