@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Product } from "../interfaces/Product";
+import { useNavigate } from "react-router-dom";
 
 interface ProductListProps {
   products: Product[];
@@ -28,6 +29,12 @@ const ProductList = ({ products }: ProductListProps) => {
     setPage(value);
   };
 
+  const navigate = useNavigate();
+
+  const navigateToProduct = (productId: string) => {
+    navigate(`/products/${productId}`);
+  };
+
   return (
     <>
       {products.length > 0 ? (
@@ -36,12 +43,13 @@ const ProductList = ({ products }: ProductListProps) => {
             {products
               .slice((page - 1) * itemsPerPage, page * itemsPerPage)
               .map((product) => (
-                <ImageListItem key={product.id}>
+                <ImageListItem key={product.id} sx={{ cursor: "pointer" }}>
                   <img
                     srcSet={`${product.image_url[0]}?w=248&fit=crop&auto=format&dpr=2 2x`}
                     src={`${product.image_url[0]}?w=248&fit=crop&auto=format`}
                     alt={product.name}
                     loading="lazy"
+                    onClick={() => navigateToProduct(product.id.toString())}
                   />
                   <ImageListItemBar
                     title={product.name}
@@ -59,6 +67,7 @@ const ProductList = ({ products }: ProductListProps) => {
                       </>
                     }
                     position="below"
+                    onClick={() => navigateToProduct(product.id.toString())}
                   />
                 </ImageListItem>
               ))}
@@ -73,7 +82,8 @@ const ProductList = ({ products }: ProductListProps) => {
         </>
       ) : (
         <Typography variant="h6" align="center">
-          There's no product you're looking for
+          There's no product you're looking for, or run "json-server --watch
+          db.json" in terminal
         </Typography>
       )}
     </>
